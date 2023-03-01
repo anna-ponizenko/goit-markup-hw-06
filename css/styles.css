@@ -461,6 +461,7 @@ footer {
 
 .social-media {
   display: block;
+  margin-right: 80px;
 }
 
 .social-text {
@@ -478,6 +479,55 @@ footer {
 .footer-link:hover,
 .footer-link:focus {
   background-color: var(--green-success-clr);
+}
+
+.subscribe-group {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.subscribe-input {
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: var(--light-color);
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 8px 24px;
+  gap: 16px;
+  cursor: pointer;
+
+  font-weight: 500;
+
+  background-color: var(--primary-brand-color);
+  color: var(--white-bg-clr);
+  border-radius: 4px;
+  border: none;
+
+  transition: background-color var(--anim-fast);
+}
+
+.btn:hover,
+.btn:focus {
+  background: var(--pressed-bg-clr);
 }
 
 /* ...............
