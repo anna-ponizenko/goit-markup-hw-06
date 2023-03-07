@@ -731,8 +731,8 @@ footer {
 }
 
 .contact-form-group {
-  display: block;
   position: relative;
+  display: block;
 }
 
 .cont-form-label {
@@ -746,36 +746,50 @@ footer {
 .cont-form-input {
   display: block;
   margin-bottom: 8px;
-  padding: 8px 36px;
+  padding: 8px 38px;
   width: 100%;
   height: 40px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition: var(--anim-fast);
 }
 
-.cont-form-txtarea {
-  display: block;
-  width: 360px;
-  font-weight: 16px;
-  margin-bottom: 16px;
-
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-}
-
-.cont-form-input:focus,
-.cont-form-txtarea:focus {
+.cont-form-input:focus {
   border-color: var(--primary-brand-color);
   outline: none;
 }
-
 .cont-form-icon {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  left: 10px;
+  left: 16px;
   pointer-events: none;
+
+  transition: var(--anim-fast);
+}
+
+.cont-form-input:focus + .cont-form-icon {
+  fill: var(--primary-brand-color);
+}
+.cont-form-txtarea {
+  display: block;
+  width: 100%;
+  font-size: 12px;
+
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  resize: none;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: var(--anim-fast);
+}
+
+.cont-form-txtarea:focus {
+  border-color: var(--primary-brand-color);
+  outline: none;
 }
 
 .modal-btn {
